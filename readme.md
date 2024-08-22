@@ -1,6 +1,8 @@
-# Project Name
+# GIF Converter
 
 A simple video file converter to gif using Python.
+
+Rationale: Hate having to do a lot of manual steps to screenshot in mac and convert a mov file to gif
 
 ## Prerequisites
 
@@ -15,7 +17,7 @@ Disclaimer: This project was built with these prerequisites and was not tested f
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/lcbtan/gif-converter.git
 ```
 
 2. Navigate to the project directory:
@@ -65,6 +67,26 @@ The output file will be saved in the same directory as the input video file, wit
 
 
 ### Convert latest video
+
+To convert the latest video, follow these steps:
+
+1. Set the `VIDEO_DIRECTORY` environment variable with the path of where to look for the videos.
+
+2. Type the following command to convert only the latest video in the directory:
+
+```bash
+python gif-converter.py
+```
+
+Alternatively, you can specify the number of videos to be converted starting from the latest to the nth latest by using the following command:
+
+```bash
+python gif-converter.py n
+```
+
+Remember to replace `n` with the desired number.
+
+The output file(s) will be saved in the same directory as the input video file(s), with the same name(s) but with a `.gif` extension.
 
 
 ## License
